@@ -176,7 +176,7 @@ Each cluster video links back to the pillar video in its description and verball
 
 Set realistic, evidence-based targets:
 
-| Milestone | Typical Timeline (3 videos/week) | What It Unlocks |
+| Milestone | Typical Timeline (3 videos/week) | Features Gained |
 |-----------|----------------------------------|-----------------|
 | 100 subscribers | Week 2-4 | Community tab (mobile), custom URL eligibility |
 | 500 subscribers | Month 1-2 | Community tab (desktop) |
@@ -222,4 +222,4 @@ Post-Session (async):
 - [ ] Content cluster map for SEO
 - [ ] Growth milestone targets with timeline estimates
 - [ ] Batch production schedule aligned to upload cadence
-- [ ] Month 1 titles finalized and production-ready
+- [ ] Month 1 titles finalized and ready for production
