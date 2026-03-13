@@ -15,7 +15,7 @@ Evaluate every candidate niche across these 6 dimensions. Use web search to pull
 | Dimension | Weight | What to Measure |
 |-----------|--------|-----------------|
 | **CPM Potential** | 25% | Average CPM in the niche. Finance/tech/B2B = $15-45. Entertainment/gaming = $2-6. Health/education = $8-18. Search: "[niche] youtube CPM 2025/2026" |
-| **Audience Size** | 20% | Total addressable audience. Check search volume for core keywords, subreddit sizes, hashtag volume. Bigger isn't always better â a 500K passionate audience > 50M casual viewers |
+| **Audience Size** | 20% | Total addressable audience. Check search volume for core keywords, subreddit sizes, hashtag volume. Bigger isn't always better — a 500K passionate audience > 50M casual viewers |
 | **Production Ease** | 20% | Can this be produced with AI tools alone? Stock footage availability. Visual complexity. Voiceover requirements. Rate: 10 = pure AI generation, 1 = requires live filming |
 | **Competition Density** | 15% | Number of channels over 100K subs in this exact sub-niche. Saturation level. Rate: 10 = wide open, 1 = dominated by established players |
 | **Monetization Paths** | 10% | Beyond AdSense: affiliate potential, sponsorship demand, digital product fit, course potential. More paths = higher score |
@@ -83,16 +83,16 @@ For each competitor channel, produce:
 **Content Analysis**:
 - Average video length: X minutes
 - Most viewed video: "[title]" (XX views)
-- Least viewed recent video: "[title]" (XX views) â why it underperformed
+- Least viewed recent video: "[title]" (XX views) — why it underperformed
 - Visual style: [describe their art style, animation quality, stock footage usage]
 - Voiceover style: [AI voice, human narrator, no voice]
-- Hook pattern: [how they open videos â first 10 seconds]
+- Hook pattern: [how they open videos — first 10 seconds]
 - Thumbnail pattern: [describe their thumbnail formula]
 
 **Gaps & Weaknesses**:
-- [Specific gap 1: e.g., "No shorts strategy â missing 40% of potential audience"]
-- [Specific gap 2: e.g., "Inconsistent upload schedule â viewer retention drops"]
-- [Specific gap 3: e.g., "Generic thumbnails â low CTR opportunity"]
+- [Specific gap 1: e.g., "No shorts strategy — missing 40% of potential audience"]
+- [Specific gap 2: e.g., "Inconsistent upload schedule — viewer retention drops"]
+- [Specific gap 3: e.g., "Generic thumbnails — low CTR opportunity"]
 
 **What to Steal (Ethically)**:
 - [Specific tactic that works and can be improved upon]
