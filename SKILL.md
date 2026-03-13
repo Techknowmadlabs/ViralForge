@@ -1,23 +1,23 @@
 ---
 name: video-content-engine
-description: "Autonomous end-to-end video content creation engine for social media platforms (YouTube, Instagram, Facebook/Meta, X/Twitter, TikTok, LinkedIn). Use this skill whenever the user mentions: video content creation, faceless YouTube channels, social media video strategy, content calendars for video, video scripts, YouTube SEO, thumbnail design, video production pipelines, AI video workflows, Shorts/Reels/TikTok content, viral video strategy, CPM optimization, faceless channels, video niche research, video batch production, or any task involving planning, scripting, producing, or optimizing video content for any social platform. Also trigger when user mentions creating a content brand, building a YouTube channel, video monetization strategy, or autonomous content pipelines. This skill handles everything from niche selection to published content with zero human intervention as the default protocol."
+description: "End-to-end video content creation engine for social media platforms (YouTube, Instagram, Facebook/Meta, X/Twitter, TikTok, LinkedIn). Trigger on: video content creation, faceless YouTube channels, social media video strategy, content calendars, video scripts, YouTube SEO, thumbnail design, video production pipelines, Shorts/Reels/TikTok content, CPM optimization, niche research, batch production, or any task involving planning, scripting, producing, or optimizing video content. Also trigger on: building a YouTube channel, video monetization strategy, content brand creation."
 ---
 
 # Video Content Engine
 
-Autonomous, enterprise-grade video content creation system. One-shot pipeline from idea to published, optimized content across all major platforms.
+End-to-end video content creation system. Produces complete, ready-to-use outputs from initial parameters through published, platform-optimized content.
 
-## Operating Philosophy
+## Operating Principles
 
-Every output from this skill is **production-ready and deployment-grade**. No placeholder content, no "fill in later" sections, no toy examples. Every script is shootable, every thumbnail concept is executable, every SEO package is paste-ready, every calendar is actionable.
+All outputs are production-ready. No placeholders, no incomplete sections. Scripts are shootable, thumbnail concepts are executable, SEO packages are paste-ready, calendars are actionable.
 
-**Zero human intervention** is the default. Every phase produces complete outputs that feed directly into the next phase. The user provides initial parameters (niche, interests, budget, goals) and receives a complete content operation.
+Each phase produces complete outputs that feed directly into the next. The user provides initial parameters (niche, interests, budget, goals) and receives a complete content operation.
 
 ---
 
 ## Phase Router
 
-Identify what the user needs and read the corresponding reference file(s). Most requests fall into one of these phases. For full pipeline builds, execute phases sequentially — each phase's output feeds the next.
+Identify what the user needs and read the corresponding reference file(s). For full pipeline builds, execute phases sequentially.
 
 | Phase | What It Does | Reference File |
 |-------|-------------|----------------|
@@ -25,10 +25,10 @@ Identify what the user needs and read the corresponding reference file(s). Most 
 | **2. Brand System** | Visual identity, style guides, art direction, thumbnail system | [visual-brand.md](references/visual-brand.md) |
 | **3. Strategy** | Content calendars, series concepts, upload cadence, growth milestones | [content-strategy.md](references/content-strategy.md) |
 | **4. SEO & Discovery** | Keywords, metadata, tags, descriptions, Shorts funnels, algorithm signals | [seo-discovery.md](references/seo-discovery.md) |
-| **5. Scriptwriting** | Full production scripts with hooks, retention architecture, visual cues, CTAs | [scriptwriting.md](references/scriptwriting.md) |
+| **5. Scriptwriting** | Production scripts with hooks, retention architecture, visual cues, CTAs | [scriptwriting.md](references/scriptwriting.md) |
 | **6. Production** | Tool chains, asset generation, voiceover, music, editing, batch workflows | [production-pipeline.md](references/production-pipeline.md) |
 | **7. Platform Ops** | Platform-specific optimization, cross-posting, format adaptation, scheduling | [platform-ops.md](references/platform-ops.md) |
-| **8. Analytics** | Performance tracking, A/B frameworks, iteration loops, monetization optimization | [analytics-optimization.md](references/analytics-optimization.md) |
+| **8. Analytics** | Performance tracking, A/B frameworks, iteration loops, monetization | [analytics-optimization.md](references/analytics-optimization.md) |
 
 ---
 
@@ -38,7 +38,7 @@ When the user wants the complete system (e.g., "build me a faceless YouTube chan
 
 ```
 REQUIRED INPUTS:
-- niche_interests: [user's topic areas, passions, expertise]
+- niche_interests: [user's topic areas, expertise]
 - platforms: [youtube, instagram, facebook, x, tiktok, linkedin] (default: all)
 - budget_monthly: [USD amount] (default: $0 — free tools only)
 - upload_cadence: [videos per week] (default: 3)
@@ -95,32 +95,32 @@ content-engine-output/
 ├── 08-analytics/
 │   ├── kpi-framework.md
 │   └── ab-testing-sop.md
-└── MASTER-PLAYBOOK.md (executive summary linking all phases)
+└── MASTER-PLAYBOOK.md
 ```
 
 ---
 
 ## Script-Assisted Operations
 
-Run these scripts for data-driven outputs. All scripts are in the `scripts/` directory.
+All scripts are in the `scripts/` directory, use Python 3.10+ stdlib only.
 
 ```bash
-# Generate niche scorecard with competitive analysis
+# Score and rank niches
 python scripts/niche_analyzer.py --interests "topic1,topic2,topic3" --platforms youtube,instagram
 
 # Generate 90-day content calendar
 python scripts/content_calendar.py --niche "NICHE" --cadence 3 --platforms youtube,instagram,x
 
-# Generate production-ready script with visual cues
+# Write a production-ready script
 python scripts/script_generator.py --topic "TOPIC" --length 10 --style faceless --visual-style "STYLE"
 
-# Generate SEO package (title variants, descriptions, tags)
+# Generate SEO package
 python scripts/seo_optimizer.py --niche "NICHE" --titles "title1|title2|title3"
 
-# Adapt content for multiple platforms from a single master script
+# Adapt for multiple platforms
 python scripts/platform_adapter.py --master-script script.md --platforms youtube,instagram,x,tiktok
 
-# Generate thumbnail concepts
+# Design thumbnail concepts
 python scripts/thumbnail_designer.py --title "VIDEO TITLE" --style "VISUAL STYLE" --niche "NICHE"
 ```
 
@@ -128,27 +128,28 @@ python scripts/thumbnail_designer.py --title "VIDEO TITLE" --style "VISUAL STYLE
 
 ## Quality Standards
 
-Every output from this skill must meet these bars:
+**Scripts**: Hook (question, stat, or pattern interrupt) within the first 8 seconds. `[VISUAL]` tags at every scene break. Pattern interrupts every 60–90 seconds. Retention architecture with open loops and payoff structure. Subscribe CTA at peak engagement (not opening or closing).
 
-**Scripts**: Must include a measurable hook (question, stat, or pattern interrupt) in the first 8 seconds. Visual cue tags `[VISUAL]` at every scene break. Pattern interrupts every 60-90 seconds. Retention architecture (open loops, payoff structure). Single subscribe CTA placed at peak engagement moment (not beginning or end).
+**Thumbnails**: 3-element rule (face/object + text + background). High contrast. Readable at mobile scale (48×27px preview). No more than 4 words of overlay text.
 
-**Thumbnails**: Must follow the 3-element rule (face/object + text + background). High contrast. Readable at mobile scale (48x27px thumbnail preview). Emotional trigger in the primary element. Never more than 4 words of overlay text.
+**SEO**: Primary keyword, 3 secondary keywords, optimized description with timestamps, 15–20 tags (broad + long-tail), Shorts-to-long-form funnel path.
 
-**SEO**: Every video gets a primary keyword, 3 secondary keywords, optimized description with timestamps, 15-20 tags mixing broad and long-tail, and a Shorts-to-long-form funnel path.
+**Calendars**: Every entry includes title, thumbnail concept, script hook, target keyword, and production time estimate. No placeholder entries.
 
-**Calendars**: Every entry includes title, thumbnail concept, script hook, target keyword, and estimated production time. No placeholder entries.
-
-**Platform Adaptation**: Each platform version is natively optimized — not just cropped or truncated. Instagram gets vertical-first visual storytelling. X gets opinion-driven hooks with thread potential. TikTok gets trend-aware hooks with sound selection notes.
+**Platform Adaptation**: Each platform version is natively optimized, not cropped or truncated. Instagram gets vertical-first visual storytelling. X gets opinion-driven hooks with thread potential. TikTok gets trend-aware hooks with sound selection notes.
 
 ---
 
-## Anti-Patterns (What This Skill Never Does)
+## Anti-Patterns
 
-- **Never produces generic "Top 10" lists** without a unique angle or contrarian take
-- **Never writes scripts that read like blog posts** — every script is written for the ear, not the eye
-- **Never suggests "just use Canva"** without specifying exact template types, dimensions, and design rules
-- **Never creates SEO packages with keyword-stuffed descriptions** — descriptions read naturally while being algorithmically optimized
-- **Never produces a content calendar with vague titles** like "Video about [topic]" — every title is click-ready
-- **Never suggests upload schedules without production time estimates** — the calendar accounts for actual creation bandwidth
-- **Never ignores platform-specific algorithm signals** — each platform has unique ranking factors and this skill respects them
-- **Never writes hooks that start with "In this video"** — the hook must create an open loop or emotional trigger before any meta-framing
+This skill does not:
+
+- Produce generic "Top 10" lists without a unique angle
+- Write scripts that read like blog posts — scripts are written for spoken delivery
+- Suggest tools without specifying exact template types, dimensions, and design rules
+- Create keyword-stuffed descriptions — descriptions read naturally while remaining algorithmically effective
+- Produce calendars with vague titles like "Video about [topic]" — every title is ready to publish
+- Suggest upload schedules without production time estimates
+- Ignore platform-specific algorithm signals
+- Write hooks that start with "In this video" — hooks create an open loop or tension before any framing
+
